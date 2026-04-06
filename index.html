@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>710.math — Herramientas Cannabis</title>
+    <meta name="description" content="Suite de simuladores científicos para cannabis: descarboxilación, purga de solvente y modelado de hidrocarburos." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="root">
+      <header id="site-header">
+        <p class="site-logo">710.math</p>
+        <p class="developed-by">Desarrollado por Tripta Labs Co.</p>
+        <div class="app-navigator">
+          <button class="nav-arrow" id="btn-prev-app" aria-label="App anterior">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <div class="app-title-block">
+            <h1 id="app-title">—</h1>
+            <p class="subtitle" id="app-subtitle">—</p>
+          </div>
+          <button class="nav-arrow" id="btn-next-app" aria-label="App siguiente">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+        <div class="app-dots" id="app-dots"></div>
+      </header>
+
+      <div id="app-container"></div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
